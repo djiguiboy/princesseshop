@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrincesseShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!--nav bar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar">
+  <div class="container-fluid">
+    <span class="logo-style">
+    <img src="logo2.jpeg" class="img-fluid logo" alt="mum">
+    <p><span class="H4">Princesse-Shop</span><br>Votre style, notre passion.
+    </p>
+    </span>
+   
+    <button class="navbar-toggler hamburger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+       <div class="navbar-toggler-icon hbr">☰</div>
+       <span></span>
+       <span></span>
+       <span></span>
+    </button>
+    
+    <div class="collapse navbar-collapse collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 NAV-UL">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Home">Accueil</a>
+        </li>
+        <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#CATEGORIES" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu menu">
+              <li><a class="dropdown-item" href="#Dress">Robes</a></li>
+            
+              <li><a class="dropdown-item" href="#Shoes">Chaussures</a></li>
+              <li><a class="dropdown-item" href="#Bags">Sacs</a></li>
+            </ul>
+            <li class="nav-item">
+          <a class="nav-link" href="#shop">Boutique</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#About us">À propos de nous</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#contact us">Contactez-nous</a>
+        </li>
+          </li>
+        </ul>
+    </div>
+  </div>
+       <div class="language">
+    <button class="lang-btn">
+        🌐 EN <i class="fa-solid fa-caret-down"></i>
+    </button>
+
+    <div class="lang-menu">
+        <a href="#" onclick="changeLanguage('en')">🇺🇸 English</a>
+        <a href="#" onclick="changeLanguage('fr')">🇫🇷 Français</a>
+    </div>
+</div>
+   <a href="#contact us" class="ICN"><i class="fa-solid fa-circle-user"></i></a>
+  <a href="#Cart" class="ICN"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count"></span></a>
+</nav>
+   
+<!--section1 Home-->
+<section id="Home" class="hero">
+    <div class="hero-text">
+            <h1>Bienvenue chez <b class="header-text">Princesse Shop</b></h1>
+            <span><p>Découvrez une collection unique de vêtements élégants, modernes et de qualité. Que ce soit pour une occasion spéciale ou pour votre style de tous les jours, nous avons la tenue parfaite pour vous.</p>
+            <p>Chaque Femme est une princess♥️!</p>
+        </div>
+        
+  <!--Buttons Container-->
+  <div class="hero-buttons BUTTONS">
+    <a href="#CATEGORIES" class="DECOUVRE">Découvrir la boutique</a>
+  </div>
+  <!-- Features Container -->
+  </section>
+  
+<!--section CATEGORIES-->
+<section id="CATEGORIES" class="Sec1">
+   <span id="Dress">
+    <div class="products  Sec1-card">
+        <div class="card">
+            <img src="Momo.jpeg" alt=" Dress">
+            <h3>Robes</h3>
+        </div>
+        </span>
+
+    
+    <span id="Shoes">
+            <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.37.59 AM (1).jpeg" alt="sac">
+            <h3>Sacs</h3>
+        </div>
+    </span>
+         
+          <span id="Bags">
+             <div class="card bag-card">
+            <img src="WhatsApp Image 2026-07-28 at 12.51.16 AM.jpeg" alt="shoes">
+            <h3>Chaussures</h3>
+        </div>
+          </span>
+</section>
+
+<div class="section-divider"></div>
+<!--section shop-->
+<section id="shop" class="shop">
+    <h1 class="h1">Notre Collection</h1>
+    <span id="">
+    <div class="products">
+        <div class="card">
+            <img src="Momo.jpeg" alt=" Dress">
+            <h3>Abaya Elegante</h3>
+            <p>Abaya raffinée offrant confort et élégance.</p>
+            <h4>49,000 FCA</h4>
+            <button id="mycart" onclick="addToCart()">Ajouter au panier<</button>
+            <p id="mycart"></p>
+        </div>
+
+        <div class="card">
+            <img src="flora dress2.jpeg" alt=" Dress">
+            <h3>Abaya Elegante</h3>
+            <p>Magnifique abaya ornée de délicates broderi.</p>
+            <h4>34,000 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="card">
+            <img src="floral dress n3.jpeg" alt=" Dress">
+            <h3>Abaya Bleue Brodee</h3>
+            <p>Abaya élégante avec de délicates broderies, idéale pour toutes les occasions..</p>
+            <h4>27,000 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+               <div class="card">
+            <img src="floral dresse.jpeg" alt=" Dress">
+            <h3>Abaya Rouge Brodee</h3>
+            <p>Une abaya raffinée au style moderne, parfaite pour les cérémonies et les événements.</p>
+            <h4>20,000 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+        </span>
+    <span id="">
+    <div class="products">
+
+        <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.37.59 AM (1).jpeg" alt="sac">
+            <h3>Le Cabas Damier</h3>
+            <p>Elegant et spacieux pour quotidien.</p>
+            <h4>10,000 CFA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.37.59 AM.jpeg" alt="sac">
+            <h3>Le Cabas Monograme</h3>
+            <p>Le chic intemprel a votre bras.</p>
+            <h4>19,400 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.38.00 AM (1).jpeg" alt="sac">
+            <h3>Le petit sac Matelasse</h3>
+            <p>Compact, tendance t iresistible.</p>
+            <h4>8,500 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+               <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.38.00 AM (2).jpeg" alt="sac">
+            <h3>Le sac Tresse chic</h3>
+            <p>Moderne et texture avec style.</p>
+            <h4>10,000 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+        </span>
+        <span id="">
+        <div class="products">
+
+        <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.51.16 AM.jpeg" alt="Floral Dress">
+            <h3>Escarpins a Noeuds</h3>
+            <p>Elegant feerique et neoud delicat</p>
+            <h4>4,700 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.51.16 AM (1).jpeg" alt="Shirt">
+            <h3>Escarpins Noirs</h3>
+            <p>L'indispensable chic et intemporel.</p>
+            <h4>6,350 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+
+        <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.51.15 AM.jpeg" alt="shoes">
+            <h3>Sandales Transparentes</h3>
+            <p>Tendance, Scintillantes et glamorous.</p>
+            <h4>5,000 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+               <div class="card">
+            <img src="WhatsApp Image 2026-07-28 at 12.51.16 AM.jpeg" alt="shoes">
+            <h3>Talons Ornes de Noeuds</h3>
+            <p>Douceur estival et style unique.</p>
+            <h4>5,500 FCA</h4>
+            <button>Ajouter au panier</button>
+        </div>
+        </span>
+    </div>
+</section>
+
+<!--section ABOUT US  -->
+
+<section class="section9" id="About us">
+ 
+  <div class="about">
+    <h1>A Propos de Princess-Shop</h1>
+    <p>Bienvenue chez Princess-Shop<br>, nous vous proposons une mode élégante, moderne et accessible pour toutes les occasions. Nous offrons une belle collection de vêtements, de sacs et d’accessoires de qualité pour vous aider à exprimer votre style et votre personnalité.</p>
+           <span class="About">
+          <h1>Notre Histoire</h1>
+    <p>Princess Shop est né d’une passion pour la mode et du désir de proposer à nos clients des produits de qualité à des prix abordables. Nous sélectionnons soigneusement nos collections afin de vous offrir des styles modernes, confortables et adaptés à vos besoins..</p>
+    
+    </div>
+    </span>
+    <span>
+    <img class="image" src="boutique.jpeg">
+    <h1 class="mission">Notre Mission</h1>
+    <p>Notre mission est de rendre la mode accessible à tous en proposant des articles de qualité, un excellent service client et une expérience de shopping agréable..</p>
+    </span>
+</section>
+    
+<!--section footer-->
+<footer id="contact us" class="footer">
+
+    <h2>Princess Shop</h2>
+
+    <p>Votre style, notre passion.</p>
+
+    <div class="contact-container">
+        <div class="contact-info">
+          <h2>Contactez-nous</h2>
+            <h3>Princesse-Shop Shop</h3>
+            <p>📍 Bamako, Mali</p>
+            <p>📞 +223 72 47 63 51</p>
+            <p>📞 +223 61 92 10 43</p>
+            <p>📧 diarradjiguiba13@gmail.com</p>
+            <p>🕒 Lundi - Samedi: 9h:00  - 19h:00 </p>
+            <h3>Reseaux Sociaux</h3>
+             <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+    
+        </div>
+  
+        <form class="contact-form">
+          <h4>Envoyer un Message</h4>
+            <input type="text" placeholder="Prenom et Nom" required>
+
+            <input type="email" placeholder="Ton Email" required>
+
+            <textarea placeholder="Ton Message" rows="5" required></textarea>
+
+            <button type="submit" class="submit">Envoyer ton Message</button>
+        </form>
+    </div>
+     </div>
+    <p class="last-p">© 2026 Princess Shop. Tous droits réservés.</p>
+
+</footer>
+<a href="https://wa.me/+917696055837" class="whatsapp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+ 
+    <script src="java.js"></script>
+    
+</body>
+</html>
